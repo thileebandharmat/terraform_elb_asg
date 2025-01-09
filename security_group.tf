@@ -2,6 +2,8 @@ resource "aws_security_group" "webservers" {
   name        = var.sgname
   description = "Allow SSH HTTP HTTPS"
 
+  vpc_id = aws_vpc.terra_vpc.id
+
   ingress {
     description = "ssh"
     from_port   = 22

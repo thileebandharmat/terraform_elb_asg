@@ -1,5 +1,5 @@
 variable "vpc_cidr" {
-  default = "10.0.0.0/20"
+  default = "10.20.0.0/20"
 }
 
 variable "subnets_cidr" {
